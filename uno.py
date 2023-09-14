@@ -6,7 +6,7 @@ lista, con excepción del último.
 """
 
 variable = 0
-##i = 0
+i = 0
 datos = [3, 6, 2, 4]
 print (len(datos))
 while i < len(datos) - 1:
