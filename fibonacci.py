@@ -20,13 +20,31 @@ mostrar un mensaje en pantalla y no retornar nada.
 >>> fib(1)
 La cantidad debe ser mayor a 2.
 """
+print("Ingrese algo: ")
+
+
+a = int(input())
+
+print("Se ingresó :")
+print(a)
+
+
 
 def fibo(a):
     """
-    Recibiendo un número entero devuelve los términos de la suceción de Fibonacci
+    Recibiendo un número entero devuelve los términos de la sucesión de Fibonacci
     correspondiente.
     """
-
-    numero = 0
-    while numero < a:
+       
+    primero = 0
+    segundo = 1
+    
+    pivot = 0
+    
+    while primero <= a:
+        print(primero)
+        pivot = segundo
+        segundo = primero + pivot
+        primero = pivot
         
+fibo(a)
