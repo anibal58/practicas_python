@@ -22,29 +22,25 @@ La cantidad debe ser mayor a 2.
 """
 print("Ingrese algo: ")
 
-
 a = int(input())
 
 print("Se ingresó :")
 print(a)
-
-
 
 def fibo(a):
     """
     Recibiendo un número entero devuelve los términos de la sucesión de Fibonacci
     correspondiente.
     """
-       
-    primero = 0
-    segundo = 1
     
+    terminos = [0,1]
     pivot = 0
     
-    while primero <= a:
-        print(primero)
-        pivot = segundo
-        segundo = primero + pivot
-        primero = pivot
-        
-fibo(a)
+    while terminos[0] <= a:
+        print(terminos[0])
+        pivot = terminos[1]
+        terminos[1] = terminos[0] + pivot
+        terminos[0] = pivot
+
+if a  > 2:      
+    fibo(a)
